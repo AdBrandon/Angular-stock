@@ -1,28 +1,26 @@
 # Angular-stock
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+本站是基于 [Angular CLI](https://github.com/angular/angular-cli) 和 TypeScript 开发的组件式单页应用。
 
-## Development server
+## 项目地址
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[39.108.109.106](http://39.108.109.106)（等待域名备案完成。。。）
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## 项目目的
 
-## Build
+基于 Angular CLI，实现以下Angular功能：
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+- 高重用性组件
+- 嵌套路由
+- 依赖注入
+- 数据绑定与管道过滤
+- 组件通讯
+- 表单处理
+- 服务器通讯
+- 项目部署
 
-## Running unit tests
+## 项目说明
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+本项目仅包含前端部分，内不包含服务器数据。
+(服务器端代码包含服务器等信息，故不公开，如有需要，可联系我)

@@ -20,7 +20,7 @@ import {MessageService} from "./header/message.server";
 
 
 const routeConfing :Routes = [
-  {path:'',redirectTo:'/stock',pathMatch:'full'},
+  {path:'',redirectTo:'/dashboard',pathMatch:'full'},
   {path:'dashboard',component:DashboardComponent},
   {path:'stock',component:StockManageComponent},
   {path:'stock/:id',component:StockFormComponent}
@@ -51,4 +51,4 @@ const routeConfing :Routes = [
   providers: [StockService,MessageService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
