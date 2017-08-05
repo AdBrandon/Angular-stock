@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  address: "39.108.109.106"
 };

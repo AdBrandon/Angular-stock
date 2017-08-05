@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MessageService} from "./message.server";
 import {Router} from "@angular/router";
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-header',
@@ -13,11 +14,10 @@ export class HeaderComponent implements OnInit {
   notifications = 0;
   tasks = 0;
 
-
   constructor(public router:Router,public messageServer:MessageService) { }
 
   ngOnInit() {
-    this.messageServer.createObservableSocket("ws://localhost:8085")
+    this.messageServer.createObservableSocket("ws://"+environment.address+":8085")
       .map(event => JSON.parse(event))
       .subscribe(
         event => {
