@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve  --proxy-config proxy.conf.json",
-    "build": "ng build  --env=prod",
+    "build": "ng build  --proxy-config proxy.conf.json  --env=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -28,6 +28,8 @@
     "jquery": "^3.2.1",
     "moment": "^2.18.1",
     "rxjs": "^5.1.0",
+    "socket.io": "^2.0.3",
+    "utf-8-validate": "^3.0.3",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
