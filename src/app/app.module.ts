@@ -17,6 +17,7 @@ import { StockFormComponent } from './stock/stock-form/stock-form.component';
 import {StockService} from "./stock/stock.service";
 import { StockFilterPipe } from './stock/stock-filter.pipe';
 import {MessageService} from "./header/message.server";
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 
 const routeConfing :Routes = [
@@ -48,7 +49,7 @@ const routeConfing :Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routeConfing)
   ],
-  providers: [StockService,MessageService],
+  providers: [StockService,MessageService,{provide:LocationStrategy,useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
